@@ -5,7 +5,7 @@
 
 (local cfg (config.get-in-fn [:client :sql :stdio]))
 
-(local M (define :conjure.client.sql.stdio.doc-str))
+(local M (define :conjure.client.sql.tree-sitter))
 
 (set M.statement-types {:statement true})
 (set M.command-wrapper-types {:statement true :transaction true})

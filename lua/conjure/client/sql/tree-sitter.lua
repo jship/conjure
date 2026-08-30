@@ -5,7 +5,7 @@ local define = _local_1_.define
 local config = autoload("conjure.config")
 local ts = autoload("conjure.tree-sitter")
 local cfg = config["get-in-fn"]({"client", "sql", "stdio"})
-local M = define("conjure.client.sql.stdio.doc-str")
+local M = define("conjure.client.sql.tree-sitter")
 M["statement-types"] = {statement = true}
 M["command-wrapper-types"] = {statement = true, transaction = true}
 M["ancestor-of-type"] = function(_3fnode, types)
